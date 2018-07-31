@@ -1,4 +1,4 @@
-import bufferBuffers from './'
+import resizeBuffers from './'
 import bufferStream from 'pull-buffer-stream'
 import test from 'ava'
 import pull, {
@@ -20,7 +20,7 @@ test.cb('Should buffer bytes when incoming is smaller than requested size', (t) 
         data = Buffer.concat([data, buffer])
       }
     }),
-    bufferBuffers(expectedChunkSize),
+    resizeBuffers(expectedChunkSize),
     collect((error, buffers) => {
       t.falsy(error)
 
@@ -49,7 +49,7 @@ test.cb('Should buffer bytes when incoming is larger than requested size', (t) =
         data = Buffer.concat([data, buffer])
       }
     }),
-    bufferBuffers(expectedChunkSize),
+    resizeBuffers(expectedChunkSize),
     collect((error, buffers) => {
       t.falsy(error)
 
@@ -78,7 +78,7 @@ test.cb('Should buffer bytes when incoming bytes are not divisible by requested 
         data = Buffer.concat([data, buffer])
       }
     }),
-    bufferBuffers(expectedChunkSize),
+    resizeBuffers(expectedChunkSize),
     collect((error, buffers) => {
       t.falsy(error)
 
@@ -103,7 +103,7 @@ test.cb('Should propagate stream errors', (t) => {
 
   pull(
     error(streamError),
-    bufferBuffers(100),
+    resizeBuffers(100),
     collect((error) => {
       t.is(error, streamError)
       t.end()
@@ -114,7 +114,7 @@ test.cb('Should propagate stream errors', (t) => {
 test.cb('Should survive stream ending', (t) => {
   pull(
     empty(),
-    bufferBuffers(100),
+    resizeBuffers(100),
     collect((error, buffers) => {
       t.falsy(error)
       t.is(buffers.length, 0)

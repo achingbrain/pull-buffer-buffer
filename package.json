@@ -1,7 +1,7 @@
 {
-  "name": "pull-buffer-buffer",
-  "version": "0.0.0",
-  "description": "Buffers incoming streams of buffers to be all of a certain size",
+  "name": "pull-resize-buffers",
+  "version": "0.0.1",
+  "description": "Resizes buffers emitted by a pull stream source to be all of a certain size",
   "main": "index.js",
   "scripts": {
     "test": "nyc --check-coverage --lines 100 --reporter html --reporter lcov ava",
