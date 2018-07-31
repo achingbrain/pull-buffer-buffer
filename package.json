@@ -1,0 +1,24 @@
+{
+  "name": "pull-buffer-buffer",
+  "version": "0.0.0",
+  "description": "Buffers incoming streams of buffers to be all of a certain size",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --check-coverage --lines 100 --reporter html --reporter lcov ava",
+    "lint": "standard",
+    "coveralls": "npm test && cat ./coverage/lcov.info | coveralls"
+  },
+  "author": "Alex Potsides <alex@achingbrain.net>",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "coveralls": "^3.0.2",
+    "nyc": "^12.0.2",
+    "pull-buffer-stream": "^0.0.1",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "pull-defer": "^0.2.2",
+    "pull-stream": "^3.6.8"
+  }
+}
