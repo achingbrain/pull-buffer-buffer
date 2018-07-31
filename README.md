@@ -2,7 +2,7 @@
 
 [![Build status](https://travis-ci.org/achingbrain/pull-resize-buffers.svg?branch=master)](https://travis-ci.org/achingbrain/pull-resize-buffers?branch=master) [![Coverage Status](https://coveralls.io/repos/github/achingbrain/pull-resize-buffers/badge.svg?branch=master)](https://coveralls.io/github/achingbrain/pull-resize-buffers?branch=master) [![Dependencies Status](https://david-dm.org/achingbrain/pull-resize-buffers/status.svg)](https://david-dm.org/achingbrain/pull-resize-buffers)
 
-> Buffers buffers
+> Resizes streams of buffers
 
 ## Installation
 
