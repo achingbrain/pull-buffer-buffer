@@ -1,5 +1,7 @@
 # pull-buffer-buffer
 
+[![Build status](https://travis-ci.org/achingbrain/pull-buffer-buffer.svg?branch=master)](https://travis-ci.org/achingbrain/pull-buffer-buffer.svg?branch=master) [![Coverage Status](https://coveralls.io/repos/github/achingbrain/pull-buffer-buffer/badge.svg?branch=master)](https://coveralls.io/github/achingbrain/pull-buffer-buffer?branch=master) [![Dependencies Status](https://david-dm.org/achingbrain/pull-buffer-buffer/status.svg)](https://david-dm.org/achingbrain/pull-buffer-buffer)
+
 > Buffers buffers
 
 ## Installation
